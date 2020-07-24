@@ -1,0 +1,23 @@
+{
+  "name": "images-srcset-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "jpeg-to-webp": "bin/jpeg-to-webp.js",
+    "resize": "bin/resize.js",
+    "a:jpeg-to-webp": "yarn jpeg-to-webp images/a.jpg images",
+    "a:resize": "yarn resize images/a.webp images/build/a-300x310-x1.webp 300 310",
+    "b:jpeg-to-webp": "yarn jpeg-to-webp images/b.jpg images",
+    "b:resize": "yarn resize images/b.webp images/build/b-600x695-x1.webp 600 695"
+  },
+  "bin": {
+    "jpeg-to-webp": "bin/jpeg-to-webp.js",
+    "resize": "bin/resize.js"
+  },
+  "dependencies": {
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^6.0.0",
+    "sharp": "^0.25.4"
+  }
+}
