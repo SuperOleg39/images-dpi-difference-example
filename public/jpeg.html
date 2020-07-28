@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>JPEG images scale example</h1>
+
+    <h2>300x310 container</h2>
+
+    <div class="layout">
+      <div class="layout layout-column">
+        <h3>Original image - .jpg - 1.3mb</h3>
+        <img src="images/a.jpg" width="300" height="310" />
+      </div>
+    </div>
+    <div class="layout">
+      <div class="layout layout-column">
+        <h3>.jpg - x1 300x310 - 15kb</h3>
+        <img src="images/build/a-300x310-x1.jpg" width="300" height="310" />
+      </div>
+      <div class="layout layout-column">
+        <h3>.jpg - x2 300x310 - 45kb</h3>
+        <img src="images/build/a-300x310-x2.jpg" width="300" height="310" />
+      </div>
+      <div class="layout layout-column">
+        <h3>.jpg - x3 300x310 - 97kb</h3>
+        <img src="images/build/a-300x310-x3.jpg" width="300" height="310" />
+      </div>
+    </div>
+
+    <h2>600x695 container</h2>
+
+    <div class="layout">
+      <div class="layout layout-column">
+        <h3>Original image - .jpg - 2.9mb</h3>
+        <img src="images/b.jpg" width="600" height="695" />
+      </div>
+    </div>
+    <div class="layout">
+      <div class="layout layout-column">
+        <h3>.jpg - x1 600x695 - 50kb</h3>
+        <img src="images/build/b-600x695-x1.jpg" width="600" height="695" />
+      </div>
+      <div class="layout layout-column">
+        <h3>.jpg - x2 600x695 - 136kb</h3>
+        <img src="images/build/b-600x695-x2.jpg" width="600" height="695" />
+      </div>
+      <div class="layout layout-column">
+        <h3>.jpg - x3 600x695 - 243kb</h3>
+        <img src="images/build/b-600x695-x3.jpg" width="600" height="695" />
+      </div>
+    </div>
+  </body>
+</html>
